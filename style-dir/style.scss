@@ -1,0 +1,52 @@
+@import "reset";
+
+.loader-container   
+{
+    text-align: center;
+    padding-top: 250px;
+}
+
+.loader-container > span
+{
+    color: rgb(0, 67, 168);
+    font-size: 3rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.loader-container > span mark
+{
+    background: rgb(0, 67, 168);
+    color: #fff;
+    padding: 0rem 1rem;
+    height: 30px;
+    border-radius: 4px;
+    margin-left: .2rem;
+}
+
+.loader-container > div
+{
+    background: #ccc;
+    height: .2rem;
+    width: 230px;
+    margin: 1rem auto;
+    overflow: hidden;
+}
+
+.shaker
+{
+    background: rgb(71, 132, 224);
+    height: .2rem;
+    width: 50px;
+    animation: left-right 800ms linear infinite;
+}
+
+@keyframes left-right {
+    0% {
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        transform: translateX(12rem);
+    }
+}
